@@ -11,6 +11,27 @@ articles pertaining to Bitcoin and Ethereum news.
 - Word Cloud Generation 
 - Named Entity Recognition 
 
+## Findings
+
+Based on sentiment analysis of the dataset, Ethereum proved to be superior over Bitcoin.
+Ethereum had a higher mean positive score (0.061 vs. 0.052),
+a higher mean compound score (0.168 vs. 0.066), a higher max positive score
+(0.297 vs. 0.229), and a lower max negative score (0.132 vs. 0.203) when 
+compared to Bitcoin.  
+
+When analyzing word frequency, quite a few of the same key words came up for
+both coins.  PayPal was one of the most common words for both coins, as was 
+char and cryptocurrency.  Reuters, London, and virtual came up often for both 
+coins as well, which can be more easily identified via the word cloud that was 
+generated.  In terms of Named Entity Recognition, ORG, PERSON, and GPE were some
+of the most common entities to come up. As a big picture analysis of both coins, 
+the sentiment is mostly neutral for both coins and both are making news
+regularly, based on the article count that was available.  The market for both 
+coins seems to be continually growing and both coins are discussed in similar 
+places and context across the industry.  It would be worth performing continued
+analysis on both coins to determine where prices may go and identify opportunities 
+that may arise. 
+
 ### Data Preparation & Sentiment Analysis
 
 To retrieve data for analysis the NewsAPI was leveraged.  All news articles in 
@@ -69,23 +90,4 @@ Examples of common entities found across both coins are: ORG, PERSON, DATE, GPE,
 and CARDINAL.  As a final step, all entities were listed for each coin 
 (word : entity format).  
 
-## Final Analysis
 
-Based on sentiment analysis of the dataset, Ethereum proved to be superior over Bitcoin.
-Ethereum had a higher mean positive score (0.061 vs. 0.052),
-a higher mean compound score (0.168 vs. 0.066), a higher max positive score
-(0.297 vs. 0.229), and a lower max negative score (0.132 vs. 0.203) when 
-compared to Bitcoin.  
-
-When analyzing word frequency, quite a few of the same key words came up for
-both coins.  PayPal was one of the most common words for both coins, as was 
-char and cryptocurrency.  Reuters, London, and virtual came up often for both 
-coins as well, which can be more easily identified via the word cloud that was 
-generated.  In terms of Named Entity Recognition, ORG, PERSON, and GPE were some
-of the most common entities to come up. As a big picture analysis of both coins, 
-the sentiment is mostly neutral for both coins and both are making news
-regularly, based on the article count that was available.  The market for both 
-coins seems to be continually growing and both coins are discussed in similar 
-places and context across the industry.  It would be worth performing continued
-analysis on both coins to determine where prices may go and identify opportunities 
-that may arise. 
